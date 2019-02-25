@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Animated Envelope</title>
+    
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0; user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Author" content="mze.ninja" />
+    
+    <link href="envelope/style.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if lt IE 9]>
+	    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+    
+    <link rel="shortcut icon" type="image/x-icon" href="envelope/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="envelope/apple-touch-icon.png"/>
+</head>
+
+    <body>
+
+        <div id="envelope-wrapper">
+
+            <!-- envelope -->
+            <div id="envelope">
+                <div id="lid"></div>
+                <a href="#" id="letter">
+                    <p><strong>Hello!</strong></p>
+                    <p>Welcome to our party.</p>
+                    <span>Register here</span>
+                </a>
+                <div id="left-corner"></div>
+                <div id="right-corner"></div>
+            </div>
+            <!-- end envelope -->
+        
+        </div>
+    
+        <script
+			  src="https://code.jquery.com/jquery-2.2.4.js"
+			  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+              crossorigin="anonymous"></script>
+                
+        <script>
+            $(document).ready(function(){
+                window.setTimeout(function(){
+                    $("#lid").addClass("lid");
+                },1000);
+                window.setTimeout(function(){
+                    $("#letter").addClass("letter");
+                },2500);
+            });
+        </script>
+        
+    </body>
+        
+</html>
